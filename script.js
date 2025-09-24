@@ -28,18 +28,25 @@ const letterData = [
     {
         month: "Tháng 9/2025",
         date: "25/09/2025",
-        title: "Thu Vàng",
-        preview: "Mùa thu đến rồi, lá vàng rơi...",
+        title: "Chớm",
+        preview: "Mọi yêu thương đều chớm nở từ những điều nhỏ nhất...",
         content: `
-            <h1>🍂 Mùa Thu Yêu Thương</h1>
-            <p>Hey bạn,</p>
-            <p>Mùa thu đã đến, lá vàng rơi đầy sân trường. Tui thích cảm giác này lắm - trời se se lạnh, phù hợp để cùng nhau đi dạo.</p>
-            <p>Bạn có muốn cùng tui thưởng thức một tách trà ấm trong tiết trời thu này không? Tui biết một quán cà phê nhỏ rất cozy đó.</p>
-            <p>Bạn luôn đẹp, nhưng trong ánh nắng vàng của mùa thu thì đặc biệt rạng rỡ! 🌟</p>
-            <p>Mong được gặp bạn sớm,</p>
-            <p>💛 Người muốn chia sẻ mùa thu cùng bạn</p>
+            <h1>🍂 Mùa Thu - Mùa Yêu</h1>
+            <p>Gửi "Em ❤️️",</p>
+            <p>Tháng 9 thật nhiều sự việc xảy ra, nhỉ?</p>
+            <p>Tui có 1 chuyến đi Hà Nội đáng nhớ, nhiều kỷ niệm và mở mang nhiều thứ.</p>
+            <p>Bạn cũng có 1 kì lễ, chắc là cũng vui vẻ bên gia đình mà phải không?</p>
+            <p>Rùi tui hì hục hẹn được bạn ra xem phim nè, ai mà dè bạn bị tai nạn... Phải kể lại là lúc đó tui cũng hoảng nhưng phải giữ bình tĩnh, biết sao sau khi bạn gọi tui lại ra khá muộn không ? Tui hỏng biết chỗ bạn nói ở đâu vì nghe không rõ, xong tui chạy đi hỏi bảo vệ người ta mới chỉ cho, xong hì hục cái thân 7x kí chạy ra...</p>
+            <p>May qua bạn không bị quá nặng, chân tay còn đủ còn tỉnh táo, không biết bạn có đế ý không chị kia gọi tui với bạn là vợ chồng, ừ nhỉ, giống mà😊</p>
+            <p>Lần đầu tiên sau rất nhiều năm, tui được chạm vào bạn, được là người đẩy xe lăn cho bạn, dù không muốn nhưng cảm giác đó tui như kiểu là 1 phần trong cuộc đời bạn ấy...</p>
+            <img src="./IMG_1775.jpg" width="300" height="300" />
+            <p>Sau này hãy cho tôi cơ hội được tham gia vào cuộc đời bạn nhiều hơn nhé</p>
+            <p>Tháng 9, chuyện vui chuyện buồn đều có cả, chỉ mong rằng 2 người khi có xung đột hãy hạ cái tôi xuống, ngồi lại lắng nghe nhau, cùng nhau xây dựng niềm tin vào đối phương</p>
+            <p>Dạo đây tui cảm nhận được là bạn quan tâm tui hơn, hông phải trước đó không có mà giờ nó lộ ra hơn, bạn cởi mở hơn, chịu nói hơn, tui vui lắm, kiểu có động lực hơn ấy, cứ tiếp tục thế nhé, trạm sạc cảm xúc của riêng tui</p>
+            <p>Mọi khởi đầu đều bắt đầu từ những điều nhỏ nhất, cố gắng nha</p>
+            <p>Cùng chào đón tháng 10 thật bùng nổ thui nào💓</p>
         `,
-        isUnlocked: false
+        isUnlocked: true
     },
     {
         month: "Tháng 10/2025",
@@ -681,6 +688,24 @@ function showLettersMenu() {
 
         setTimeout(() => {
             menuScreen.style.display = 'none';
+            lettersScreen.style.display = 'block';
+            lettersScreen.style.animation = 'fadeIn 0.5s ease forwards';
+        }, 500);
+    }
+
+    currentScreen = 'letters';
+}
+
+// Show letters menu
+function quickShowLettersMenu() {
+    const welcomeScreen = document.getElementById('welcomeScreen');
+    const lettersScreen = document.getElementById('lettersScreen');
+
+    if (welcomeScreen && lettersScreen) {
+        welcomeScreen.style.animation = 'fadeOut 0.5s ease forwards';
+
+        setTimeout(() => {
+            welcomeScreen.style.display = 'none';
             lettersScreen.style.display = 'block';
             lettersScreen.style.animation = 'fadeIn 0.5s ease forwards';
         }, 500);
