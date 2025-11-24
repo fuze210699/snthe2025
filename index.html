@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>You Are My Wife</title>
+    <title>Merry Christmas 2025 🎄</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="clock.css" />
     <link
@@ -15,7 +15,7 @@
   <body>
     <!-- Audio -->
     <audio id="birthdayMusic" loop>
-      <source src="music/blue.mp3" type="audio/mpeg" />
+      <source src="music/christmas.mp3" type="audio/mpeg" />
     </audio>
 
     <!-- Clock Sounds -->
@@ -27,113 +27,12 @@
     </audio>
     <audio id="alarmSound" preload="auto"></audio>
 
-    <!-- Clock Loading Overlay -->
-    <div class="clock-overlay" id="clockOverlay">
-      <!-- Start Button Overlay -->
-      <div class="start-overlay" id="startOverlay">
-        <button class="start-button" id="startButton">
-          <span>Click to Start</span>
-        </button>
-      </div>
-
-      <div class="clock-container" id="clockContainer" style="display: none">
-        <div class="clock">
-          <!-- Clock frame and decorative rings -->
-          <div class="clock-outer-ring"></div>
-          <div class="clock-inner-ring"></div>
-
-          <div class="clock-face">
-            <!-- Hour numbers -->
-            <div class="hour-number" style="--i: 0">12</div>
-
-            <!-- Hour tick marks (12 major ticks) -->
-            <div class="hour-tick" style="--i: 0"></div>
-            <div class="hour-tick" style="--i: 1"></div>
-            <div class="hour-tick" style="--i: 2"></div>
-            <div class="hour-tick" style="--i: 3"></div>
-            <div class="hour-tick" style="--i: 4"></div>
-            <div class="hour-tick" style="--i: 5"></div>
-            <div class="hour-tick" style="--i: 6"></div>
-            <div class="hour-tick" style="--i: 7"></div>
-            <div class="hour-tick" style="--i: 8"></div>
-            <div class="hour-tick" style="--i: 9"></div>
-            <div class="hour-tick" style="--i: 10"></div>
-            <div class="hour-tick" style="--i: 11"></div>
-
-            <!-- Minute tick marks (60 small ticks) -->
-            <div class="minute-tick" style="--i: 0"></div>
-            <div class="minute-tick" style="--i: 1"></div>
-            <div class="minute-tick" style="--i: 2"></div>
-            <div class="minute-tick" style="--i: 3"></div>
-            <div class="minute-tick" style="--i: 4"></div>
-            <div class="minute-tick" style="--i: 6"></div>
-            <div class="minute-tick" style="--i: 7"></div>
-            <div class="minute-tick" style="--i: 8"></div>
-            <div class="minute-tick" style="--i: 9"></div>
-            <div class="minute-tick" style="--i: 11"></div>
-            <div class="minute-tick" style="--i: 12"></div>
-            <div class="minute-tick" style="--i: 13"></div>
-            <div class="minute-tick" style="--i: 14"></div>
-            <div class="minute-tick" style="--i: 16"></div>
-            <div class="minute-tick" style="--i: 17"></div>
-            <div class="minute-tick" style="--i: 18"></div>
-            <div class="minute-tick" style="--i: 19"></div>
-            <div class="minute-tick" style="--i: 21"></div>
-            <div class="minute-tick" style="--i: 22"></div>
-            <div class="minute-tick" style="--i: 23"></div>
-            <div class="minute-tick" style="--i: 24"></div>
-            <div class="minute-tick" style="--i: 26"></div>
-            <div class="minute-tick" style="--i: 27"></div>
-            <div class="minute-tick" style="--i: 28"></div>
-            <div class="minute-tick" style="--i: 29"></div>
-            <div class="minute-tick" style="--i: 31"></div>
-            <div class="minute-tick" style="--i: 32"></div>
-            <div class="minute-tick" style="--i: 33"></div>
-            <div class="minute-tick" style="--i: 34"></div>
-            <div class="minute-tick" style="--i: 36"></div>
-            <div class="minute-tick" style="--i: 37"></div>
-            <div class="minute-tick" style="--i: 38"></div>
-            <div class="minute-tick" style="--i: 39"></div>
-            <div class="minute-tick" style="--i: 41"></div>
-            <div class="minute-tick" style="--i: 42"></div>
-            <div class="minute-tick" style="--i: 43"></div>
-            <div class="minute-tick" style="--i: 44"></div>
-            <div class="minute-tick" style="--i: 46"></div>
-            <div class="minute-tick" style="--i: 47"></div>
-            <div class="minute-tick" style="--i: 48"></div>
-            <div class="minute-tick" style="--i: 49"></div>
-            <div class="minute-tick" style="--i: 51"></div>
-            <div class="minute-tick" style="--i: 52"></div>
-            <div class="minute-tick" style="--i: 53"></div>
-            <div class="minute-tick" style="--i: 54"></div>
-            <div class="minute-tick" style="--i: 56"></div>
-            <div class="minute-tick" style="--i: 57"></div>
-            <div class="minute-tick" style="--i: 58"></div>
-            <div class="minute-tick" style="--i: 59"></div>
-
-            <!-- Clock hands -->
-            <div class="hand hour-hand" id="hourHand">
-              <div class="hand-inner"></div>
-            </div>
-            <div class="hand minute-hand" id="minuteHand">
-              <div class="hand-inner"></div>
-            </div>
-            <div class="hand second-hand" id="secondHand">
-              <div class="hand-circle"></div>
-              <div class="hand-inner"></div>
-              <div class="hand-tail"></div>
-            </div>
-
-            <!-- Center cap -->
-            <div class="center-cap">
-              <div class="center-cap-inner"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Digital Time Display -->
-        <div class="digital-time" id="digitalTime">04:59:57</div>
-      </div>
+    <!-- Christmas Tree Overlay -->
+    <div class="christmas-overlay" id="christmasOverlay">
+      <div class="christmas-tree">🎄</div>
+      <button class="start-button" id="startButton">
+        <span>Xem Danh Sách Thư</span>
+      </button>
     </div>
 
     <!-- Main Container -->
@@ -143,65 +42,29 @@
         <!-- Flying sunflowers background -->
         <div class="panda-container">
           <!-- Flying Pandas with different poses and effects -->
-          <div class="panda panda-1">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-2">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-3">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-4">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-5">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-6">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-7">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-8">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-9">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-10">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-11">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-12">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-13">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-14">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-15">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-16">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-17">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
-          <div class="panda panda-18">
-            <img src="./sunflower.png" width="50" alt="" />
-          </div>
+          <div class="panda panda-1">🎄</div>
+          <div class="panda panda-2">🎅</div>
+          <div class="panda panda-3">⛄</div>
+          <div class="panda panda-4">🎁</div>
+          <div class="panda panda-5">❄️</div>
+          <div class="panda panda-6">☃️</div>
+          <div class="panda panda-7">🔔</div>
+          <div class="panda panda-8">⭐</div>
+          <div class="panda panda-9">🎄</div>
+          <div class="panda panda-10">🎅</div>
+          <div class="panda panda-11">⛄</div>
+          <div class="panda panda-12">🎁</div>
+          <div class="panda panda-13">❄️</div>
+          <div class="panda panda-14">☃️</div>
+          <div class="panda panda-15">🔔</div>
+          <div class="panda panda-16">⭐</div>
+          <div class="panda panda-17">🎄</div>
+          <div class="panda panda-18">🎅</div>
         </div>
 
         <div class="letters-header">
-          <h2 class="letters-title">🎃 12 Bức Thư Ma Mị 🎃</h2>
-          <p class="letters-subtitle">👻 Từ 25/08/2025 đến 25/08/2026 🦇</p>
+          <h2 class="letters-title">� 12 Bức Thư Giáng Sinh �</h2>
+          <p class="letters-subtitle">🎅 Từ 25/12/2024 đến 25/12/2025 ⛄</p>
         </div>
 
         <div class="letters-grid" id="lettersGrid">

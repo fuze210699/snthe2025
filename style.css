@@ -6,11 +6,11 @@
 }
 
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #000000;
-  --accent-color: #03045e;
+  --primary-color: #0f5132;
+  --secondary-color: #dc3545;
+  --accent-color: #c41e3a;
   --gold-color: #ffd700;
-  --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  --bg-gradient: linear-gradient(135deg, #0f5132 0%, #1a5c3a 50%, #0a3d22 100%);
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,7 +36,7 @@ body {
 .welcome-screen {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+  background: linear-gradient(135deg, #0f5132 0%, #dc3545 50%, #ffd700 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -609,20 +609,20 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 1rem 2.5rem;
-  background: linear-gradient(45deg, var(--accent-color), #ff8fab);
+  background: linear-gradient(45deg, #dc3545, #c41e3a);
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
   position: relative;
   overflow: hidden;
 }
 
 .start-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.5);
 }
 
 .start-btn:active {
@@ -633,7 +633,7 @@ body {
 .animation-screen {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f5132 0%, #dc3545 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -672,7 +672,7 @@ body {
 }
 
 .date-part.year {
-  color: #4ecdc4;
+  color: #ffd700;
   animation-delay: 0.6s;
 }
 
@@ -783,7 +783,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 10px 12px;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #0f5132, #1a5c3a);
   color: white;
   border: none;
   border-radius: 25px;
@@ -792,14 +792,14 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(15, 81, 50, 0.3);
   min-width: 250px;
   text-align: center;
 }
 
 .menu-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(15, 81, 50, 0.5);
 }
 
 .btn-icon {
@@ -811,7 +811,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #5a189a 100%);
+  background: linear-gradient(135deg, #0a3d22 0%, #0f5132 50%, #1a5c3a 100%);
   padding: 2rem;
   z-index: 10;
 }
@@ -824,8 +824,8 @@ body {
   width: 100%;
   height: 100%;
   background-image: 
-    radial-gradient(circle at 20% 30%, rgba(255, 165, 0, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 60%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 60%, rgba(220, 53, 69, 0.1) 0%, transparent 50%);
   pointer-events: none;
   z-index: 1;
 }
@@ -838,7 +838,7 @@ body {
 }
 
 .letters-header::before {
-  content: '🎃';
+  content: '🎄';
   font-size: 4rem;
   display: block;
   animation: float 3s ease-in-out infinite;
@@ -855,35 +855,35 @@ body {
   left: 2rem;
   padding: 0.8rem 1.5rem;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  color: #ff6b00;
-  border: 2px solid #ff6b00;
+  color: #ffd700;
+  border: 2px solid #ffd700;
   border-radius: 25px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
   z-index: 20;
-  text-shadow: 0 0 3px rgba(255, 107, 0, 0.2);
+  text-shadow: 0 0 3px rgba(255, 215, 0, 0.2);
 }
 
 .back-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(157, 78, 221, 0.3);
+  box-shadow: 0 6px 20px rgba(220, 53, 69, 0.3);
   background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
-  border-color: #9d4edd;
-  color: #9d4edd;
+  border-color: #dc3545;
+  color: #dc3545;
   z-index: 21;
 }
 
 .letters-title {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
-  color: #ff6b00;
+  color: #dc3545;
   margin-bottom: 0.5rem;
   text-shadow: 
-    0 0 5px rgba(255, 107, 0, 0.4),
-    0 0 10px rgba(255, 107, 0, 0.3),
+    0 0 5px rgba(220, 53, 69, 0.4),
+    0 0 10px rgba(220, 53, 69, 0.3),
     2px 2px 4px rgba(0, 0, 0, 0.6);
   animation: spookyGlow 2s ease-in-out infinite alternate;
 }
@@ -891,14 +891,14 @@ body {
 @keyframes spookyGlow {
   from {
     text-shadow: 
-      0 0 5px rgba(255, 107, 0, 0.4),
-      0 0 10px rgba(255, 107, 0, 0.3),
+      0 0 5px rgba(220, 53, 69, 0.4),
+      0 0 10px rgba(220, 53, 69, 0.3),
       2px 2px 4px rgba(0, 0, 0, 0.6);
   }
   to {
     text-shadow: 
-      0 0 10px rgba(255, 107, 0, 0.6),
-      0 0 15px rgba(255, 107, 0, 0.4),
+      0 0 10px rgba(220, 53, 69, 0.6),
+      0 0 15px rgba(220, 53, 69, 0.4),
       2px 2px 4px rgba(0, 0, 0, 0.6);
   }
 }
@@ -906,8 +906,8 @@ body {
 .letters-subtitle {
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;
-  color: #9d4edd;
-  text-shadow: 0 0 5px rgba(157, 78, 221, 0.3);
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
 }
 
 /* Letters Grid */
@@ -927,16 +927,16 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 
-    0 8px 25px rgba(255, 107, 0, 0.2),
-    inset 0 0 20px rgba(255, 107, 0, 0.05);
-  border: 2px solid #ff6b00;
+    0 8px 25px rgba(220, 53, 69, 0.2),
+    inset 0 0 20px rgba(220, 53, 69, 0.05);
+  border: 2px solid #dc3545;
   position: relative;
   overflow: hidden;
   z-index: 11;
 }
 
 .letter-item::before {
-  content: '🦇';
+  content: '⭐';
   position: absolute;
   top: 10px;
   right: 10px;
@@ -959,7 +959,7 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, #ff6b00, #9d4edd, #ff6b00);
+  background: linear-gradient(90deg, #dc3545, #ffd700, #dc3545);
   background-size: 200% 100%;
   animation: shimmer 3s linear infinite;
 }
@@ -972,9 +972,9 @@ body {
 .letter-item:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 
-    0 15px 50px rgba(255, 107, 0, 0.4),
-    inset 0 0 30px rgba(255, 107, 0, 0.1);
-  border-color: #9d4edd;
+    0 15px 50px rgba(220, 53, 69, 0.4),
+    inset 0 0 30px rgba(220, 53, 69, 0.1);
+  border-color: #ffd700;
   z-index: 12;
 }
 
@@ -986,33 +986,33 @@ body {
 }
 
 .letter-item.locked::before {
-  content: '👻';
+  content: '🎄';
   opacity: 0.5;
 }
 
 .letter-item.locked:hover {
   transform: none;
   box-shadow: 
-    0 8px 25px rgba(255, 107, 0, 0.2),
-    inset 0 0 20px rgba(255, 107, 0, 0.05);
+    0 8px 25px rgba(220, 53, 69, 0.2),
+    inset 0 0 20px rgba(220, 53, 69, 0.05);
   border-color: #555;
 }
 
 .letter-month {
   font-family: 'Fredoka One', cursive;
   font-size: 1.8rem;
-  color: #ff6b00;
+  color: #dc3545;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 5px rgba(255, 107, 0, 0.3);
+  text-shadow: 0 0 5px rgba(220, 53, 69, 0.3);
 }
 
 .letter-date {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
-  color: #9d4edd;
+  color: #ffd700;
   margin-bottom: 1rem;
   font-weight: 600;
-  text-shadow: 0 0 3px rgba(157, 78, 221, 0.2);
+  text-shadow: 0 0 3px rgba(255, 215, 0, 0.2);
 }
 
 .letter-preview {
@@ -1027,7 +1027,7 @@ body {
   font-size: 2rem;
   color: #666;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 3px rgba(157, 78, 221, 0.3));
+  filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.3));
 }
 
 /* Letter Reading Screen */
@@ -1035,7 +1035,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #5a189a 100%);
+  background: linear-gradient(135deg, #0a3d22 0%, #0f5132 50%, #1a5c3a 100%);
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -1051,8 +1051,8 @@ body {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 30%, rgba(255, 107, 0, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(157, 78, 221, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 30%, rgba(220, 53, 69, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -1069,14 +1069,14 @@ body {
   padding: 3rem;
   box-shadow: 
     0 10px 40px rgba(0, 0, 0, 0.5),
-    0 0 20px rgba(255, 107, 0, 0.2);
-  border: 2px solid #ff6b00;
+    0 0 20px rgba(220, 53, 69, 0.2);
+  border: 2px solid #dc3545;
   position: relative;
   z-index: 12;
 }
 
 .letter-paper::before {
-  content: '🦇';
+  content: '⭐';
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1094,11 +1094,11 @@ body {
 
 .letter-content h1 {
   font-family: 'Pacifico', cursive;
-  color: #ff6b00;
+  color: #dc3545;
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
-  text-shadow: 0 0 3px rgba(255, 107, 0, 0.2);
+  text-shadow: 0 0 3px rgba(220, 53, 69, 0.2);
 }
 
 .letter-content p {

@@ -71,18 +71,17 @@ const letterData = [
   {
     month: "Tháng 11/2025",
     date: "25/11/2025",
-    title: "Lời Cảm Ơn",
+    title: "Giác ngộ",
     preview: "Cảm ơn bạn đã đến với cuộc đời...",
     content: `
-            <h1>🦃 Thanksgiving</h1>
+            <h1>Giác ngộ</h1>
             <p>Bạn thân yêu,</p>
-            <p>Trong tháng lời cảm ơn này, tui muốn cảm ơn bạn vì đã xuất hiện trong cuộc sống của tui. Từ ngày quen bạn, mọi thứ đều trở nên thú vị hơn.</p>
-            <p>Cảm ơn bạn vì những cuộc trò chuyện đêm khuya, những nụ cười tươi và cả những khoảnh khắc bạn làm tim tui đập nhanh hơn.</p>
-            <p>Bạn là món quà tuyệt vời mà cuộc sống mang đến. Tui thật sự biết ơn!</p>
-            <p>Với lòng biết ơn sâu sắc,</p>
+            <p>Lời nhắn từ 1 người biết lắng nghe, biết bao dung, biết thấu hiếu, biết kiếm tiền, biết phải có dự định cho tương lai, chắc chắn quan tâm bạn, đang học quan tâm tui, phấn đấu làm bạn thấy yên tâm, nhất định làm bạn thấy được yêu thương.</p>
+            <br>
+            <p>Ngắn gọn nhưng đủ chân thành.</p>
             <p>🙏 Người rất trân trọng bạn</p>
         `,
-    isUnlocked: false,
+    isUnlocked: true,
   },
   {
     month: "Tháng 12/2025",
