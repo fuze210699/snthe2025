@@ -86,17 +86,16 @@ const letterData = [
   {
     month: "Tháng 12/2025",
     date: "25/12/2025",
-    title: "Giáng Sinh Ấm Áp",
-    preview: "Merry Christmas! Một mùa Giáng sinh ấm áp...",
+    title: "Growth Up",
+    preview: "Merry Christmas",
     content: `
             <h1>🎄 Merry Christmas</h1>
-            <p>Ho ho ho! 🎅</p>
-            <p>Giáng sinh đến rồi! Tui đã chuẩn bị một món quà nhỏ cho bạn đó. Hy vọng bạn sẽ thích nó!</p>
-            <p>Chúc bạn có một mùa Giáng sinh thật ấm áp bên gia đình. Và nếu có thời gian, tui mong được cùng bạn ngắm những ánh đèn Giáng sinh lung linh trên phố.</p>
-            <p>Merry Christmas, người đặc biệt! 🎁</p>
-            <p>P.S: Tui hy vọng ông già Noel sẽ thực hiện ước nguyện bí mật của tui... 😉</p>
+            <p>Cố lên bạn nhé, mọi khó khăn rồi sẽ qua, mọi điều không tốt rồi sẽ mất đi.</p>
+            <p>Rồi ai cũng sẽ yêu và được yêu, ai cũng sẽ học được từ sai lầm của mình để tốt hơn.</p>
+            <p>Nếu lỡ sau này tui có tốt hơn đủ để làm bạn trầm trồ, t sẽ giữ cho b 1 vé ưu tiên.</p>
+            <p>Có lẽ kiếp trước mình có duyên - nợ !</p>
         `,
-    isUnlocked: false,
+    isUnlocked: true,
   },
   {
     month: "Tháng 1/2026",
